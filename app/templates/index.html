@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <title>Science Courses</title>
+  </head>
+  <body>
+    <header class="header main-header">
+      <div class="container">
+        <div class="header__content">
+          <p class="logo">Logo</p>
+
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="" class="nav__link nav__link-active">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="{% url 'core:features' %}" class="nav__link">Features</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">News</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="btn">Start Learn</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container main-container">
+        <div class="content">
+          <h1 class="content__title">New Way To Learn Natural Science</h1>
+          <p class="content__description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
+            velit ea asperiores eos minima beatae blanditiis, maiores vel vitae
+            facere.
+          </p>
+          <div class="content__buttons">
+            <button class="btn">Show More</button>
+            <button class="btn-outline">Get Started</button>
+          </div>
+        </div>
+
+        <div class="img-block">
+          <div class="img__orbe"></div>
+          <div class="main__img">
+            <img class="img" src="{% static '/img/main.jpg' %}" alt="home image" />
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+django
+# djangorestframework
+psycopg2-binary
+celery
+redis
+uwsgi
+gunicorn
+nox
+# brunette
+# isort
+# flake8
+# mypy

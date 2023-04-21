@@ -1,0 +1,57 @@
+.main-features {
+    margin-bottom: 100px;
+}
+
+.feat-container {
+  text-align: center;
+  position: relative;
+}
+
+.feat__content-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.feat__title {
+
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 73px;
+  margin-bottom: 70px;
+}
+
+.feat__description {
+  width: 310px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin-right: 49px;
+}
+
+.feat-img {
+  width: 462px;
+  height: 480px;
+}
+
+.feat__authors {
+  width: 198px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  margin-left: 127px;
+
+  color: #000000;
+}
+
+.feat__buttons {
+    margin: 0 auto;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}

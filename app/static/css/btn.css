@@ -1,0 +1,40 @@
+.btn {
+  min-width: 160px;
+  min-height: 56px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 5px #d32884;
+  outline: none;
+  border-color: transparent;
+  cursor: pointer;
+  text-align: center;
+  background-color: #d32884;
+  color: white;
+  font-family: JetBrains Mono;
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.btn:active,
+.btn-outline:active {
+  transform: translate(3px, 3px);
+}
+
+.btn:hover {
+    box-shadow: 3px 5px 10px #d32884;
+}
+
+.btn-outline {
+  min-width: 190px;
+  min-height: 56px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  background-color: transparent;
+  cursor: pointer;
+  text-align: center;
+  font-family: JetBrains Mono;
+  letter-spacing: 0.2em;
+  font-size: 14px;
+  font-weight: 700;
+  color: #585858;
+}

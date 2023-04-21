@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <title>Science Courses</title>
+</head>
+<body>
+    <header class="features-header">
+        <div class="container">
+          <div class="header__content">
+            <p class="logo">Logo</p>
+  
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="{% url 'core:index' %}" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link nav__link-active">Features</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">News</a>
+                </li>
+              </ul>
+            </nav>
+  
+            <button class="btn">Start Learn</button>
+          </div>
+        </div>
+      </header>
+
+      <main class="main-features">
+        <div class="container feat-container">
+            <div class="feat__content">
+                <h1 class="feat__title"> Course Of <br/> Astrobiology✨</h1>
+                <div class="feat__content-flex">
+                    <p class="feat__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas molestias perferendis officia excepturi quibusdam illo facere explicabo, ipsum quaerat sequi veritatis maxime aliquid sed est ut, aut amet dolore minima pariatur atque. Distinctio quam earum neque eligendi, odit nobis beatae.</p>
+                    <img src="{% static '/img/features-1.jpg' %}" class="feat-img" alt="astrobiology image">
+                    <p class="feat__authors">
+                        Authors: <br/>
+                        Jhon Bernal <br/>
+                        Carl Sagan <br/>
+                        Stephen Hawking <br/>
+                        Kip Thorne <br/>
+                    </p>
+                </div>
+                <div class="feat__buttons">
+                    <button class="btn">Explore Now</button>
+                    <button class="btn-outline">Read <br/> Description</button>
+                </div>
+            </div>
+        </div>
+      </main>
+</body>
+</html>
