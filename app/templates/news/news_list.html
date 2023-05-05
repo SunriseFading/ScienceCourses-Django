@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+  <title>Science Courses</title>
+</head>
+
+<body>
+  <header class="features-header">
+    <div class="container">
+      <div class="header__content">
+        <p class="logo">Logo</p>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="{% url 'core:features' %}" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="{% url 'news:list' %}" class="nav__link">Features</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link  nav__link-active">News</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="btn">Start Learn</button>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="news-block">
+          <h1 class="news__title">Our News</h1>
+
+          <ul class="news">
+            {% for item in news %}
+            <li class="couple">
+              <div class="question">{{ item.title }}
+                <img src="{% static 'img/arrow.png' %}" alt="" class="arrow">
+              </div>
+              <div class="answer">{{ item.text }}
+                <img src="{{ item.image.url }}" alt="" class="answer__img">
+              </div>
+            </li>
+            {% endfor %}
+        </div>
+
+
+      </div>
+    </main>
+    <script src="{% static 'js/index.js' %}"></script>
+  </body>
+
+</html>

@@ -1,4 +1,3 @@
-
 .main-container {
     display: flex;
     justify-content: space-between;
@@ -38,8 +37,8 @@
     width: 440px;
     height: 440px;
     background: linear-gradient(180deg,
-    #000 93%,
-    hsl(0, 0%, 67%) 100%);
+            #000 93%,
+            hsl(0, 0%, 67%) 100%);
     border-radius: 50%;
 }
 
@@ -57,14 +56,22 @@
 }
 
 .img:hover {
-    animation: spin 5s linear infinite;
+    animation: scale 2s linear infinite;
 
 }
 
 
 
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-      }
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }

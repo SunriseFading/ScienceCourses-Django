@@ -1,19 +1,12 @@
-from django.db.models import (
-    CharField,
-    DateTimeField,
-    ImageField,
-    Model,
-    SlugField,
-    TextField,
-)
-from django.urls import reverse
+from django.db.models import CharField, DateTimeField, ImageField, Model, TextField
 
 
 class News(Model):
     title = CharField(max_length=128, verbose_name="Заголовок")
-    lead = CharField(max_length=200, verbose_name="Лид текст")
     text = TextField(verbose_name="Основной текст")
-    slug = SlugField(max_length=130, unique=True)
+    image = ImageField(
+        verbose_name="Изображение", upload_to="news/", blank=True, null=True
+    )
     created = DateTimeField(auto_now_add=True, verbose_name="Дата создания")
 
     class Meta:
@@ -26,6 +19,3 @@ class News(Model):
 
     def __str__(self):
         return self.title
-
-    def get_absolute_url(self):
-        return reverse("news:detail", kwargs={"slug": self.slug})

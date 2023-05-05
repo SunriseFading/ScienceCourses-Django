@@ -16,8 +16,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "account",
     "core",
-    "news"
+    "news",
 ]
 
 MIDDLEWARE = [
@@ -74,8 +75,12 @@ AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
 ]
 
-# Cashe
+# Cache
 CACHES = {"default": {"BACKEND": "django.core.cache.backends.locmem.LocMemCache"}}
+
+AUTH_USER_MODEL = "account.User"
+
+LOGOUT_REDIRECT_URL = "core:index"
 
 # Internationalization
 LANGUAGE_CODE = "ru-ru"

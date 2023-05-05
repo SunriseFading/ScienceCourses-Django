@@ -6,6 +6,7 @@ redis
 uwsgi
 gunicorn
 nox
+Pillow
 # brunette
 # isort
 # flake8

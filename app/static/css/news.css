@@ -1,0 +1,48 @@
+.news-block {
+  margin: 0 auto;
+
+  max-width: 75%;
+}
+
+.news {
+  background-color: white;
+}
+
+.question {
+  padding-left: 10px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.answer {
+  padding-left: 10px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: #d32884;
+  color: white;
+  font-size: 20px;
+  display: none;
+}
+
+.answer-img {
+  max-height: 460px;
+  max-width: 50%;
+}
+
+.couple {
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.arrow {
+  padding-left: 50px;
+  height: 30px;
+}
+
+.question.active+.answer {
+  display: flex;
+}
