@@ -1,92 +1,92 @@
 /* Стили для модального окна */
 
 .display-none {
-    display: none;
+  display: none;
 }
 
-.modal {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-  
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50%;
-    max-width: 600px;
-  }
-  
-  .modal-close {
-    cursor: pointer;
-    padding: 5px;
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
+.modal, .timer-modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
-  
-  .modal-close:hover,
-  .modal-close:focus {
-    color: red;
-  }
-  
-  /* Стили для кнопки "Вход" */
-  
-  .btn-signin {
-    background-color: #d32884;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    width: 100%;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .btn-signin:hover {
-    background-color: #aa0b60ef;
-  }
-  
-  /* Стили для кнопки "Регистрация" */
-  
-  .btn-signup {
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    transition: all .4s ease;
-    width: 30%;
-  }
-  
-  .btn-signup:hover {
-    border-bottom: 1px solid black;
-  }
-  
-  /* Стили для формы */
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  input[type=email],
-  input[type=password] {
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  max-width: 600px;
+}
+
+.modal-close, .timer-close {
+  cursor: pointer;
+  padding: 5px;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.modal-close:hover, .timer-close:hover,
+.modal-close:focus {
+  color: red;
+}
+
+/* Стили для кнопки "Вход" */
+
+.btn-signin {
+  background-color: #d32884;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-signin:hover {
+  background-color: #aa0b60ef;
+}
+
+/* Стили для кнопки "Регистрация" */
+
+.btn-signup {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: all .4s ease;
+  width: 30%;
+}
+
+.btn-signup:hover {
+  border-bottom: 1px solid black;
+}
+
+/* Стили для формы */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type=email],
+input[type=password] {
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
